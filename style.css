@@ -12,7 +12,7 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #6563ff;
+  background: linear-gradient(140deg, #A94438, #D24545, #E6BAA3 ,#E4DEBE);
 }
 ::selection{
   color: #fff;
@@ -46,7 +46,7 @@ body{
   margin: 8px 0;
 }
 .card.shake{
-  animation: shake 0.35s ease-in-out;
+  animation: shake 0.1s ease-in-out;
 }
 @keyframes shake {
   0%, 100%{
@@ -74,7 +74,7 @@ body{
   background: #fff;
   border-radius: 7px;
   backface-visibility: hidden;
-  transition: transform 0.25s linear;
+  transition: transform 0.18s linear;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 .card .front-view img{

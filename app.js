@@ -12,7 +12,7 @@ let disableDeck = false;
 let isPlaying = false;
 let cardOne, cardTwo, timer;
 
-let highScore = localStorage.getItem("highScoreMatchedPairs") || 0;
+let highScore = localStorage.getItem("highScore") || 0;
 
 highScoreTag.innerText = highScore;
 
@@ -96,7 +96,7 @@ function shuffleCard() {
 function updateHighScore() {
     if (matchedCard > highScore) {
         highScore = matchedCard;
-        localStorage.setItem("highScoreMatchedPairs", highScore);
+        localStorage.setItem("highScore", highScore);
         highScoreTag.innerText = highScore;
     }
 }
