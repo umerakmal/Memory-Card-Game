@@ -49,7 +49,7 @@ function flipCard({ target: clickedCard }) {
 function matchCards(img1, img2) {
     if (img1 === img2) {
         matchedCard++;
-        if (matchedCard == 6 && timeLeft > 0) {
+        if (matchedCard == 8 && timeLeft > 0) {
             updateHighScore();
             return clearInterval(timer);
         }
